@@ -38,11 +38,9 @@ globalThis.require_upd = __commonJS({
       req.from = req.from.username || req.from.title || req.from.first_name;
       console.info(req)
       
-      if (req.successful_payment) await fetch(`https://api.telegram.org/bot${TOKEN}/answerprecheckoutquery?pre_checkout_query_id=${req.id}&ok=true`);
-
-
+      if (req.successful_payment) await fetch(`https://api.telegram.org/bot${TOKEN}/sendmessage?chat_id=${req.chat}&text=${req.successful_payment.invoice_payload}`);
       
-      if (req.type = "") await fetch(`https://api.telegram.org/bot${TOKEN}/answerprecheckoutquery?pre_checkout_query_id=${req.id}&ok=true`);
+      if (req.type = "pre_checkout_query") await fetch(`https://api.telegram.org/bot${TOKEN}/answerprecheckoutquery?pre_checkout_query_id=${req.id}&ok=true`);
 
 
       

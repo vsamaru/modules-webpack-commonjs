@@ -37,6 +37,12 @@ globalThis.require_upd = __commonJS({
       req.chat = req.from.id;
       req.from = req.from.username || req.from.title || req.from.first_name;
       console.info(req)
+      
+      if (req.tot
+         ) await fetch(`https://api.telegram.org/bot${TOKEN}/answerprecheckoutquery?pre_checkout_query_id=${req.id}&ok=true`);
+
+
+      
       if (req.total_amount) await fetch(`https://api.telegram.org/bot${TOKEN}/answerprecheckoutquery?pre_checkout_query_id=${req.id}&ok=true`);
 
 

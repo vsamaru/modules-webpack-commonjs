@@ -30,12 +30,20 @@ globalThis.require_upd = __commonJS({
       if (r.cf)
         r = await r.clone().json();
       globalThis.req = r;   
-console.info(req)
+
       req[Object.keys(req)[1]].type = Object.keys(req)[1];
       req = req[Object.keys(req)[1]];
       req.from = req.chat || req.from;
       req.chat = req.from.id;
       req.from = req.from.username || req.from.title || req.from.first_name;
+      console.info(req)
+      if (req.total_amount) await fetch(`https://api.telegram.org/bot${TOKEN}/answerprecheckoutquery?pre_checkout_query_id=${req.id}&ok=true`);
+
+
+      
+      
+      
+      
       if (req.text && req.text.startsWith(".")) {
         req.ref = req.text.replace(".", "");
         delete req.text;

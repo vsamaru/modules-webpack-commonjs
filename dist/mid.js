@@ -38,6 +38,21 @@ globalThis.require_upd = __commonJS({
       req.from = req.from.username || req.from.title || req.from.first_name;
       console.info(req)
       
+const shippingOptions = [
+  {
+    id: 'unicorn',
+    title: 'Unicorn express',
+    prices: [{ label: 'Unicorn', amount: 2000 }]
+  },
+  {
+    id: 'slowpoke',
+    title: 'Slowpoke mail',
+    prices: [{ label: 'Slowpoke', amount: 100 }]
+  }
+]  
+
+if (req.type == "shipping_query") await fetch(`https://api.telegram.org/bot${TOKEN}/answershippingquery?shipping_query_id=${req.id}&ok=true&shipping_options=${JSON.stringify(shippingOptions)}`);
+
       if (req.successful_payment) await fetch(`https://api.telegram.org/bot${TOKEN}/sendmessage?chat_id=${req.chat}&text=${req.successful_payment.invoice_payload}`);
       
       if (req.type == "pre_checkout_query") await fetch(`https://api.telegram.org/bot${TOKEN}/answerprecheckoutquery?pre_checkout_query_id=${req.id}&ok=true`);

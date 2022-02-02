@@ -286,6 +286,7 @@ var src_default = {
 
     globalThis.B = {};
 	   console.info(params)
+	  globalThis.TOKEN = "5014684179:AAHcQh9yVycNpBt4dxhhu3BrIvcsrnxPMpY";
     if (request.method === "GET")
       return new Response((0, import_html.html)(JSON.stringify(request.cf, null, 4)), { headers: {
         "content-type": "text/html"

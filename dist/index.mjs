@@ -237,6 +237,9 @@ req.photo = `https://res.cloudinary.com/o6/image/fetch/w_960/g_north,l_${v.pic},
     B.method = "sendphoto";
   }
   if (req.type == "inline_query") {
+	  
+
+	  
 	  const invoice = {
   provider_token: "284685063:TEST:MDc4ZmJkOWY0MmRm",
   start_parameter: 'time-machine-sku',
@@ -244,7 +247,7 @@ req.photo = `https://res.cloudinary.com/o6/image/fetch/w_960/g_north,l_${v.pic},
   description: 'Want to visit your great-great-great-grandparents? Make a fortune at the races? Shake hands with Hammurabi and take a stroll in the Hanging Gardens? Order our Working Time Machine today!',
   currency: 'usd',
   photo_url: 'https://i.ibb.co/PT70pZK/49-43444-32-08718.jpg',
-  is_flexible: false,
+  is_flexible: true,
   prices: [
     { label: 'Working Time Machine', amount: 4200 },
     { label: 'Gift wrapping', amount: 1000 }

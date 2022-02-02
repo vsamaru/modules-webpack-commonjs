@@ -30,7 +30,7 @@ globalThis.require_upd = __commonJS({
       if (r.cf)
         r = await r.clone().json();
       globalThis.req = r;   
-
+console.info(req)
       req[Object.keys(req)[1]].type = Object.keys(req)[1];
       req = req[Object.keys(req)[1]];
       req.from = req.chat || req.from;

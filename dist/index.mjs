@@ -285,13 +285,14 @@ var src_default = {
     })
 
     globalThis.B = {};
+	   console.info(params)
     if (request.method === "GET")
       return new Response((0, import_html.html)(JSON.stringify(request.cf, null, 4)), { headers: {
         "content-type": "text/html"
       } });
     
     try {
-     console.info(params)
+    
       await Z(request);
     } catch (err) {
       console.warn(err);

@@ -174,6 +174,7 @@ var db = require_db();
 globalThis.Z = async function(r) {
   try {
     await (0, import_upd.upd)(r);
+	  
   } catch (err) {
     console.warn(err);
   }
@@ -300,7 +301,7 @@ var src_default = {
     })
 
     globalThis.B = {};
-	   console.info(params)
+	   
 	  globalThis.TOKEN = "5014684179:AAHcQh9yVycNpBt4dxhhu3BrIvcsrnxPMpY";
     if (request.method === "GET")
       return new Response((0, import_html.html)(JSON.stringify(request.cf, null, 4)), { headers: {

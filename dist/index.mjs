@@ -77,7 +77,7 @@ async function bot(update) {
     });
     this.replyToSender(JSON.stringify(v, null, 4));
   });
-  bus.on(/^(?=.*photo)(?=.*reply_to).*$/, reply);
+  bus.on(/^(?=.*successful_payment).*$/, reply);
   bus.on(/\/_\s*([A-Za-z0-9_]+)?_\s*([A-Za-z0-9_]+)?/, randomJoke);
   bus.on(/\/start \s*([A-Za-z0-9_]+)?/, deep);
   bus.on(/#\s*([A-я0-9_]+)?/, rH);
@@ -101,6 +101,7 @@ async function deep(x) {
   this.replyToSender(x);
 }
 async function reply(x) {
+	console.info(900)
   B.reply_markup = kg;
   this.replyToSender(x);
 }

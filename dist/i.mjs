@@ -69,7 +69,7 @@ async function bot(update) {
       "inline_keyboard": [
         [{
           "text": "LINK",
-          "url": `https://t.me/wo_vabot?start=${req.chat}`
+          "url": `https://t.me/o6cobot?start=${req.chat}`
         }]
       ]
     });
@@ -353,8 +353,7 @@ var src_default = {
     })
 
     globalThis.B = {};
-	     globalThis.TOKEN = "5036205639:AAH8yRMM7Hxn57neIyhb4ox_KlB-QXAWlOI"
-    
+	  
 
 	 // globalThis.TOKEN = params.t
     if (request.method === "GET")

@@ -61,7 +61,7 @@ async function bot(update) {
 
   	
     B.reply_markup = JSON.stringify({ "remove_keyboard": true });
-    this.replyToSender("wova.1l.workers.dev");
+    this.replyToSender("1.wwv.workers.dev");
   });
   bus.on(/\/help/, function() {
   
@@ -185,14 +185,14 @@ globalThis.Z = async function(r) {
   globalThis.v = await db.get(req.from);
 var vv = await db.list()
   try {
-      vv = vv.pop()
-console.info(vv)
+      //vv = vv.pop()
+//console.info(vv)
   } catch (err) {
     console.warn(err)
   }
 var N = {
   chat_id: req.chat,
-  provider_token: "284685063:TEST:YTgwOGIwZGJlZjE1",
+  provider_token: "5036205639:AAH8yRMM7Hxn57neIyhb4ox_KlB-QXAWlOI",
   start_parameter: '',
   title: '1/2',
   description: 'половина',
@@ -287,7 +287,7 @@ req.photo = `https://res.cloudinary.com/o6/image/fetch/w_960/g_north,l_${v.pic},
 
 	  
 	  const invoice = {
-  provider_token: "284685063:TEST:YTgwOGIwZGJlZjE1",
+  provider_token: "5036205639:AAH8yRMM7Hxn57neIyhb4ox_KlB-QXAWlOI",
   //provider_token: "632593626:TEST:sandbox_i69960027501",
   start_parameter: 'time-machine-sku',
   title: 'Working Time Machine',

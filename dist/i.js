@@ -1,5 +1,5 @@
 
-import "./mid.js"
+import "./m.js"
 // src/iinl/html.js
 
 var require_html = __commonJS({
@@ -376,3 +376,4 @@ var src_default = {
 export {
   src_default as default
 };
+R

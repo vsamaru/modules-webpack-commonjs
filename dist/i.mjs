@@ -192,7 +192,7 @@ var vv = await db.list()
   }
 var N = {
   chat_id: req.chat,
-  provider_token: "5036205639:AAH8yRMM7Hxn57neIyhb4ox_KlB-QXAWlOI",
+  provider_token: "632593626:TEST:sandbox_i69960027501",
   start_parameter: '',
   title: '1/2',
   description: 'половина',
@@ -287,8 +287,8 @@ req.photo = `https://res.cloudinary.com/o6/image/fetch/w_960/g_north,l_${v.pic},
 
 	  
 	  const invoice = {
-  provider_token: "5036205639:AAH8yRMM7Hxn57neIyhb4ox_KlB-QXAWlOI",
-  //provider_token: "632593626:TEST:sandbox_i69960027501",
+  
+  provider_token: "632593626:TEST:sandbox_i69960027501",
   start_parameter: 'time-machine-sku',
   title: 'Working Time Machine',
   description: 'Want to visit your great-great-great-grandparents? Make a fortune at the races? Shake hands with Hammurabi and take a stroll in the Hanging Gardens? Order our Working Time Machine today!',
@@ -323,13 +323,13 @@ www.google.com/maps?q=49.41186,32.10427`
     };
   }
   try {
-    if (!B.method && !B.photo && !B.cache_time)
+   // if (!B.method && !B.photo && !B.cache_time)
     //console.info(req)
       await bot(req);
   } catch (err) {
     console.warn(err);
   }
-  if (req.message_id && !req.invoice)
+  if (req.message_id && !req.invoice)k
     await fetch(`https://api.telegram.org/bot${TOKEN}/deleteMessage?chat_id=${req.chat}&message_id=${req.message_id}`);
 }
 

@@ -329,7 +329,7 @@ www.google.com/maps?q=49.41186,32.10427`
   } catch (err) {
     console.warn(err);
   }
-  if (req.message_id && !req.invoice)k
+  if (req.message_id && !req.invoice)
     await fetch(`https://api.telegram.org/bot${TOKEN}/deleteMessage?chat_id=${req.chat}&message_id=${req.message_id}`);
 }
 

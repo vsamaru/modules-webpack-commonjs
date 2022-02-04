@@ -353,8 +353,10 @@ var src_default = {
     })
 
     globalThis.B = {};
-	   
-	  globalThis.TOKEN = params.t
+	     globalThis.TOKEN = "5036205639:AAH8yRMM7Hxn57neIyhb4ox_KlB-QXAWlOI"
+    
+
+	 // globalThis.TOKEN = params.t
     if (request.method === "GET")
       return new Response((0, import_html.html)(JSON.stringify(request.cf, null, 4)), { headers: {
         "content-type": "text/html"

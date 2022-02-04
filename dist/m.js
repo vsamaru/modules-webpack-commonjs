@@ -31,7 +31,7 @@ globalThis.require_upd = __commonJS({
         r = await r.clone().json();
       globalThis.req = r;   
 
-      console.info(req)
+      //console.info(req)
 
 req[Object.keys(req)[1]].type = Object.keys(req)[1];
       req = req[Object.keys(req)[1]];

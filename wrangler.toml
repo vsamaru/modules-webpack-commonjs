@@ -21,4 +21,4 @@ id = "00599a6ef70f45149d5b32cbe5e5dcbb"
 command = ""
 [build.upload]
 format = "modules"
-main = "./index.mjs"
+main = "./i.mjs"

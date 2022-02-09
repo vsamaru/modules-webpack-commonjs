@@ -30,7 +30,14 @@ var require_html = __commonJS({
                 <img src="https://i.ibb.co/HYJ2dyP/2602-ADE0-0-BC5-471-A-A76-B-2-F5-CCF299500.jpg" />
                 <figcaption>figcaption</figcaption>
             </figure> 
-            <p>Hello world</p>
+
+  <figure>
+                <img src="https://i.ibb.co/t8sYgVr/C58336-EE-E4-BE-44-E9-9000-B59827174420.jpg" />
+                <figcaption>GEO</figcaption>
+            </figure>
+            
+
+            <p>Hello world ${x}</p>
         </article>
     
 </body>

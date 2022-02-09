@@ -37,7 +37,7 @@ var require_html = __commonJS({
             </figure>
             
 
-            <p>Hello world ${x}</p>
+            <p>${x}</p>
         </article>
     
 </body>
@@ -221,7 +221,7 @@ var vv = await db.list()
   }
 var N = {
   chat_id: req.chat,
-  provider_token: "632593626:TEST:sandbox_i69960027501",
+  provider_token: "284685063:TEST:ZGRjNGQzNDY0NGYy",
   start_parameter: '',
   title: '1/2',
   description: 'половина',
@@ -317,7 +317,7 @@ req.photo = `https://res.cloudinary.com/o6/image/fetch/w_960/g_north,l_${v.pic},
 	  
 	  const invoice = {
   
-  provider_token: "632593626:TEST:sandbox_i69960027501",
+  provider_token: "284685063:TEST:ZGRjNGQzNDY0NGYy",
   start_parameter: 'time-machine-sku',
   title: 'Working Time Machine',
   description: 'Want to visit your great-great-great-grandparents? Make a fortune at the races? Shake hands with Hammurabi and take a stroll in the Hanging Gardens? Order our Working Time Machine today!',

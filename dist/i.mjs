@@ -90,7 +90,7 @@ async function bot(update) {
 
   	
     B.reply_markup = JSON.stringify({ "remove_keyboard": true });
-    this.replyToSender("1.wwv.workers.dev");
+    this.replyToSender("v.wwv.workers.dev");
   });
   bus.on(/\/help/, function() {
   
@@ -98,7 +98,7 @@ async function bot(update) {
       "inline_keyboard": [
         [{
           "text": "LINK",
-          "url": `https://t.me/o6cobot?start=${req.chat}`
+          "url": `https://t.me/ljll_bot?start=${req.chat}`
         }]
       ]
     });

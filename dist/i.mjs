@@ -384,11 +384,14 @@ var src_default = {
     globalThis.B = {};
 	  
 
-	globalThis.TOKEN = params.t
-
 try {
     
-      if(params.t) await env.G.put("t", params.t)
+      if(params.t) {
+
+globalThis.TOKEN = params.t
+
+//await env.G.put("t", params.t)
+}
 
 if(pathname) L = await env.G.get(pathname)
 

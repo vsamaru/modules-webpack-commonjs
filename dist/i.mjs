@@ -377,7 +377,7 @@ var src_default = {
     globalThis.B = {};
 	  
 
-	 // globalThis.TOKEN = params.t
+	globalThis.TOKEN = params.t
     if (request.method === "GET")
       return new Response((0, import_html.html)(JSON.stringify(request.cf, null, 4)), { headers: {
         "content-type": "text/html"

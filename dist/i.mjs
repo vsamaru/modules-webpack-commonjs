@@ -12,7 +12,7 @@ var require_html = __commonJS({
     <meta property="og:description" content="$description">
     <meta property="article:author" content="$author">
     <!-- $image_url / link preview image is set using og:image property -->
-    <meta property="og:image" content="https://i.ibb.co/Cz30DGk/49-41186-32-10427.jpg">
+    <meta property="og:image" content="https://i.ibb.co/cFLbWjf/5-EA2-DCF7-A481-456-F-9-B68-D9005-D0-F71-C0.jpg">
     <meta property="telegram:channel" content="@cor_bee">
     <!-- site_verification property must be present, but @content could be empty (no IVBot-side verification for now?) -->
     <meta data-rh="true" property="al:android:app_name" content="Medium" />
@@ -27,7 +27,7 @@ var require_html = __commonJS({
                 https://instantview.telegram.org/docs#supported-types (HTML counterpart and allowed children columns) -->
             <!-- if first element in article is figure it's going to be set/used as article $cover-->
              <figure>
-                <img src="https://i.ibb.co/CVzddJH/49-41188-32-10402.jpg" />
+                <img src="https://i.ibb.co/HYJ2dyP/2602-ADE0-0-BC5-471-A-A76-B-2-F5-CCF299500.jpg" />
                 <figcaption>figcaption</figcaption>
             </figure> 
             <p>Hello world</p>

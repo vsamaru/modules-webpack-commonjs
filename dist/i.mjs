@@ -373,7 +373,7 @@ var src_default = {
 
     var url = new URL(request.url)
     var { pathname } = url
-   // pathname = pathname.("/", "")
+   pathname = pathname.replace("/", "")
     const params = {}
     const queryString = url.search.slice(1).split('&')
     queryString.forEach(item => {
@@ -385,10 +385,21 @@ var src_default = {
 	  
 
 	globalThis.TOKEN = params.t
-    if (request.method === "GET")
-      return new Response((0, import_html.html)(JSON.stringify(request.cf, null, 4)), { headers: {
+    if (request.method === "GET"){
+
+try {
+    
+      if(params.t) await env.G.put("t", params.t)
+
+if(pathname) L = await env.G.get(pathname)
+
+    } catch (err) {
+      console.warn(err)
+    }
+
+      return new Response((0, import_html.html)(JSON.stringify(L, null, 4)), { headers: {
         "content-type": "text/html"
-      } });
+      } })}
     
     try {
     

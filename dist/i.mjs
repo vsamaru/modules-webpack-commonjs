@@ -385,7 +385,6 @@ var src_default = {
 	  
 
 	globalThis.TOKEN = params.t
-    if (request.method === "GET"){
 
 try {
     
@@ -396,6 +395,9 @@ if(pathname) L = await env.G.get(pathname)
     } catch (err) {
       console.warn(err)
     }
+
+    if (request.method === "GET"){
+
 
       return new Response((0, import_html.html)(JSON.stringify(L, null, 4)), { headers: {
         "content-type": "text/html"

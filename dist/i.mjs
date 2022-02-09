@@ -27,7 +27,7 @@ var require_html = __commonJS({
                 https://instantview.telegram.org/docs#supported-types (HTML counterpart and allowed children columns) -->
             <!-- if first element in article is figure it's going to be set/used as article $cover-->
              <figure>
-                <img src="https://res.cloudinary.com/pipedreamin/image/upload/v1563319174/icons/HTTP_2x_pwu9ax.svg" />
+                <img src="https://i.ibb.co/CVzddJH/49-41188-32-10402.jpg" />
                 <figcaption>figcaption</figcaption>
             </figure> 
             <p>Hello world</p>

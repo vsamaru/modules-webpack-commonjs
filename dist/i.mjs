@@ -17,7 +17,7 @@ var require_html = __commonJS({
     <!-- site_verification property must be present, but @content could be empty (no IVBot-side verification for now?) -->
     <meta data-rh="true" property="al:android:app_name" content="Medium" />
     <!-- published_time property must be present, but you could leave @content empty if $published_date isn't needed -->
-    <meta property="article:published_time" content="2020-02-03T23:10:04.654Z">
+    <meta property="article:published_time" content="">
 </head>
 <body>
     <article>

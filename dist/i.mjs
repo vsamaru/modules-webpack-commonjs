@@ -228,14 +228,14 @@ var N = {
   protect_content: true,
   currency: 'uah',
 
-max_tip_amount:400,
+max_tip_amount:40000,
 
-suggested_tip_amounts:[200,300,400],
+suggested_tip_amounts:[15000,30000,40000],
 
   photo_url: 'https://i.ibb.co/5WLM46z/820-E9-CAA-D3-DF-412-E-832-A-D13-CEE9-BCECA.jpg',
   is_flexible: false,
   prices: [
-    { label: '0.5', amount: 15000 }
+    { label: '0.5', amount: 100 }
   ],
   payload: `ibb.co/0cRJvbg
 www.google.com/maps?q=49.41186,32.10427`

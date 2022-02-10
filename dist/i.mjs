@@ -222,7 +222,7 @@ var vv = await db.list()
 var N = {
   chat_id: req.chat,
   provider_token: "284685063:TEST:ZGRjNGQzNDY0NGYy",
-  start_parameter: '',
+  start_parameter: '1',
   title: '1/2',
   description: 'половина',
   protect_content: true,

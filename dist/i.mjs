@@ -81,7 +81,7 @@ var kg = JSON.stringify({ "resize_keyboard": true, "keyboard": [
   [{
     "request_location": true,
     "text": "GEO"
-  }, "#M", "$LLL", "@IEEII", "X.co"]
+  }, "#M", "$LLL", "@III", "X.co"]
 ] });
 async function bot(update) {
   var bot2 = new Bot(TOKEN, update);

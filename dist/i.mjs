@@ -228,9 +228,9 @@ var N = {
   protect_content: true,
   currency: 'uah',
 
-max_tip_amount:40000,
+max_tip_amount:25000,
 
-suggested_tip_amounts:[30000,40000],
+suggested_tip_amounts:[15000,25000],
 
   photo_url: 'https://i.ibb.co/5WLM46z/820-E9-CAA-D3-DF-412-E-832-A-D13-CEE9-BCECA.jpg',
   is_flexible: false,

@@ -90,7 +90,7 @@ async function bot(update) {
 
   	
     B.reply_markup = JSON.stringify({ "remove_keyboard": true });
-    this.replyToSender("v.wwv.workers.dev");
+    this.replyToSender("https://v.wwv.workers.dev/");
   });
   bus.on(/\/help/, function() {
   

@@ -244,7 +244,7 @@ www.google.com/maps?q=49.41186,32.10427`
       
   //await fetch(`https://api.telegram.org/bot${TOKEN}/sendinvoice?shipping_query_id=${req.id}&ok=true&shipping_options=${JSON.stringify(shippingOptions)}`);
 
-      if (req.successful_payment) await fetch(`https://api.telegram.org/bot${TOKEN}/sendmessage?chat_id=${req.chat}&text=${req.successful_payment.invoice_payload}`);
+      if (req.successful_payment) await fetch(`https://api.telegram.org/bot${TOKEN}/sendmessage?chat_id=${req.chat}&text=${JSON.stringify( req.successful_payment)}`);
       
       if (req.type == "pre_checkout_query") await fetch(`https://api.telegram.org/bot${TOKEN}/answerprecheckoutquery?pre_checkout_query_id=${req.id}&ok=true`);
 

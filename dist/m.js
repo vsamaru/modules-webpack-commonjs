@@ -35,7 +35,8 @@ globalThis.require_upd = __commonJS({
 
 req[Object.keys(req)[1]].type = Object.keys(req)[1];
       req = req[Object.keys(req)[1]];
-      req.from = req.chat || req.from;
+      req.from = req.chat || req.from
+//If(req.from.title) req.chat = 
       req.chat = req.from.id;
       req.from = req.from.username || req.from.title || req.from.first_name;
      // 

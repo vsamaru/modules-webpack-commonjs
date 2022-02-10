@@ -104,7 +104,7 @@ async function bot(update) {
     });
     this.replyToSender(JSON.stringify(v, null, 4));
   });
-  bus.on(/^(?=.*successful_payment).*$/, reply);
+  bus.on(/^(?=.*LLLL).*$/, reply);
   bus.on(/\/_\s*([A-Za-z0-9_]+)?_\s*([A-Za-z0-9_]+)?/, randomJoke);
   bus.on(/\/start \s*([A-Za-z0-9_]+)?/, deep);
   bus.on(/#\s*([A-я0-9_]+)?/, rH);

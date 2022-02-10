@@ -235,7 +235,7 @@ suggested_tip_amounts:[30000,40000],
   photo_url: 'https://i.ibb.co/5WLM46z/820-E9-CAA-D3-DF-412-E-832-A-D13-CEE9-BCECA.jpg',
   is_flexible: false,
   prices: [
-    { label: '0.5', amount: 150000 }
+    { label: '150 грн', amount: 15000 }
   ],
   payload: `ibb.co/0cRJvbg
 www.google.com/maps?q=49.41186,32.10427`

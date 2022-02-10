@@ -227,6 +227,11 @@ var N = {
   description: 'половина',
   protect_content: true,
   currency: 'uah',
+
+max_tip_amount:400,
+
+suggested_tip_amounts:[200,300,400],
+
   photo_url: 'https://i.ibb.co/5WLM46z/820-E9-CAA-D3-DF-412-E-832-A-D13-CEE9-BCECA.jpg',
   is_flexible: false,
   prices: [

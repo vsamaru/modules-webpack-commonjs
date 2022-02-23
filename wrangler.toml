@@ -1,25 +1,14 @@
-
-name = "v"
+name = "w"
 type = "javascript"
-#account_id = "d1574ff4d207bc23602cc79fc78b7b2a"
-#account_id = "0de3674adef884f16d5803ba28ee6e13"
-
 workers_dev = true
-compatibility_date = "2021-12-26"
-
-[[kv_namespaces]]
-binding = "G"
-id = "00599a6ef70f45149d5b32cbe5e5dcbb"
-
-# [vars]
-# HOOK_PATH = "/"
-
-# TELEGRAM_API_TOKEN = "5017904403:AAFY1cZFRuN1HN3aSn-YDPenR5y8i5t3jaQ"
-# TOKEN = "5017904403:AAFY1cZFRuN1HN3aSn-YDPenR5y8i5t3jaQ"
-# ALLOWED_CHAT_IDS = "5043676235,-1001570134152,-1001739992180"
 
 [build]
-command = ""
+command = "npm install && npm run build"
+
 [build.upload]
 format = "modules"
-main = "./i.mjs"
+main = "./shim.mjs"
+
+[[build.upload.rules]]
+type = "Text"
+globs = ["**/*.txt"]
